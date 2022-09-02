@@ -3,7 +3,7 @@ import { TopicsCollection } from "./TopicsCollection";
 import { TopicSearch } from "./TopicSearch";
 
 export const TopicExplorer = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("react");
 
   const topicSearchHandler = (event) => {
     event.preventDefault();
@@ -17,17 +17,12 @@ export const TopicExplorer = () => {
 
   return (
     <main>
-      <h1>GitHub Topic Explorer</h1>
-      <h2>Look for other topics related to your favourite project!</h2>
-
       <TopicSearch submitHandler={topicSearchHandler} />
 
       <TopicsCollection
         searchTerm={searchTerm}
         clickHandler={topicClickHandler}
       />
-
-      <footer>Made with ❤️ by Alek</footer>
     </main>
   );
 };
