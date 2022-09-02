@@ -1,16 +1,16 @@
-import { useQuery } from "@apollo/client";
-import { GET_TOPICS_BY_NAME } from "./api/githubQueries";
+import { TopicExplorer } from "./components/TopicExplorer";
 
 const App = () => {
-  const { loading, error, data } = useQuery(GET_TOPICS_BY_NAME, {
-    variables: { name: "react" },
-  });
+  return (
+    <div className="App">
+      <h1>GitHub Topic Explorer 🕵️</h1>
+      <h2>Look for other topics related to your favourite project!</h2>
 
-  if (loading) return <div className="">Loading Topics...</div>;
+      <TopicExplorer />
 
-  if (error) return <div className="">Error while fetching topics</div>;
-
-  return <div className="App"></div>;
+      <footer>Made with ❤️ by Alek</footer>
+    </div>
+  );
 };
 
 export default App;
