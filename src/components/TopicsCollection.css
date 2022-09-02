@@ -1,0 +1,14 @@
+.collection-title {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.collection-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+hr {
+  margin: 1rem 0;
+}

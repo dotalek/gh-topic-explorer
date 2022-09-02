@@ -1,0 +1,25 @@
+.topic {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 10rem;
+  outline: 1px solid gray;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.topic:hover {
+  background-color: gray;
+}
+
+.topic-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.topic-stargazercount > i,
+.topic-stargazercount > strong {
+  font-size: 0.75rem;
+}
