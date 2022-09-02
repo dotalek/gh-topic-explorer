@@ -10,10 +10,9 @@ export const Topic = ({ topic, clickHandler }) => {
     >
       <h4>{name}</h4>
       <p>
-        <i aria-label={`has ${stargazerCount} stargazers`}>✨</i>{" "}
+        <i aria-label={`has ${stargazerCount} stargazers`}>⭐️</i>
         <strong>{stargazerCount}</strong>
       </p>
-      <hr />
     </article>
   );
 };
