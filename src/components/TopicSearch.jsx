@@ -2,7 +2,7 @@ import "./TopicSearch.css";
 
 export const TopicSearch = ({ submitHandler }) => {
   return (
-    <form onSubmit={(e) => submitHandler(e)}>
+    <form name="search form" onSubmit={(e) => submitHandler(e)}>
       <label htmlFor="searchTerm" className="search-label">
         Search for a topic
       </label>

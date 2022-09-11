@@ -28,6 +28,23 @@ npm run dev
 
 ---
 
+## How to test
+
+1. Clone the repository by your preferred method.
+2. Run the following command on your terminal to set up all dependencies:
+
+```
+npm install
+```
+
+3. Run the following command to run unit tests:
+
+```
+npm run test
+```
+
+---
+
 ## Development Notes
 
 I chose to use Vite to set up and build the app. It creates a new React app faster and more easily compared to Create React App(CRA). Furthermore, the app would only be engaging with an API and displaying the information on the client, so a backend to store data was not needed. Also, the ability to import stylesheets per component without rules conflicting with other styles makes it very comfortable to work on styling. Lastly, it has a much smaller initial space footprint compared to CRA.
